@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot 5 Sénégal - Votre terrain de Foot à 5</title>
-    <meta name="description" content="Réservez votre terrain de foot à 5 au Sénégal. Profitez d'une expérience de jeu unique sur nos terrains modernes et bien entretenus.">
-    <meta name="keywords" content="foot 5, football, sénégal, terrain de foot, sport, location, dakar">
+    <title>Foot 5 Sénégal - Votre Terrain de Football à 5</title>
+    <meta name="description" content="Découvrez le meilleur terrain de football à 5 au Sénégal. Réservez votre créneau pour des matchs inoubliables entre amis ou pour des tournois.">
+    <meta name="keywords" content="foot 5, football à 5, terrain de foot, Sénégal, Dakar, sport, location terrain, tournoi foot">
     <meta name="author" content="Foot 5 Sénégal">
-    <link rel="canonical" href="https://www.foot5senegal.com/"> <!-- Remplacez par votre domaine réel -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Ajoutez votre Favicon ici -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts for Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (replace with your kit or a public CDN if preferred) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <h1 class="logo"><a href="#">Foot 5 Sénégal</a></h1>
-            <nav class="nav-menu">
-                <button class="hamburger" aria-label="Toggle navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
                 <ul class="nav-list">
-                    <li><a href="#hero">Accueil</a></li>
-                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À Propos</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#tarifs">Tarifs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -34,89 +34,105 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h2>Le Meilleur Terrain de Foot à 5 au Sénégal</h2>
-                <p>Venez vivre une expérience de jeu inégalée entre amis ou en famille !</p>
-                <a href="#contact" class="btn btn-primary">Réservez Maintenant</a>
+        <section id="accueil" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Votre Terrain de Foot à 5 de Rêve au Sénégal!</h2>
+                    <p>Profitez d'une expérience de jeu inégalée sur nos terrains modernes et bien entretenus.</p>
+                    <a href="#tarifs" class="btn btn-primary">Réservez Votre Créneau</a>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="about-section section-padding">
+        <section id="a-propos" class="about section-padding">
             <div class="container">
-                <h3>À Propos de Nous</h3>
-                <p>Situé au cœur du Sénégal, notre complexe Foot 5 offre des terrains de dernière génération pour tous les passionnés de football. Nos infrastructures sont conçues pour vous garantir un confort optimal et une sécurité maximale.</p>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <i class="icon fas fa-futbol"></i>
-                        <h4>Terrains Synthétiques</h4>
-                        <p>Surface de jeu de haute qualité pour une performance optimale et moins de fatigue.</p>
+                <h2 class="section-title">À Propos de Nous</h2>
+                <div class="about-content">
+                    <p>Bienvenue chez Foot 5 Sénégal, votre destination privilégiée pour le football à 5. Nous offrons des installations de pointe, idéales pour les matchs entre amis, les entraînements d'équipe ou l'organisation de tournois.</p>
+                    <p>Nos terrains synthétiques de dernière génération garantissent une surface de jeu optimale, minimisant les risques de blessures et maximisant le plaisir. Éclairage nocturne, vestiaires confortables, et un staff accueillant sont à votre disposition pour une expérience complète.</p>
+                    <p>Que vous soyez un joueur occasionnel ou un passionné, Foot 5 Sénégal est l'endroit idéal pour vivre votre passion du football.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Nos Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Location de Terrain</h3>
+                        <p>Louez nos terrains pour vos matchs privés, à l'heure ou pour des sessions prolongées. Flexibilité et disponibilité assurées.</p>
                     </div>
-                    <div class="feature-item">
-                        <i class="icon fas fa-lightbulb"></i>
-                        <h4>Éclairage LED</h4>
-                        <p>Jouez confortablement même après le coucher du soleil grâce à notre éclairage puissant.</p>
+                    <div class="service-item">
+                        <h3>Organisation de Tournois</h3>
+                        <p>Nous vous aidons à organiser des tournois amicaux ou compétitifs, avec la possibilité d'inclure arbitrage et remise de prix.</p>
                     </div>
-                    <div class="feature-item">
-                        <i class="icon fas fa-shower"></i>
-                        <h4>Vestiaires Modernes</h4>
-                        <p>Profitez de vestiaires propres et équipés avec douches pour votre après-match.</p>
+                    <div class="service-item">
+                        <h3>Cours et Coaching</h3>
+                        <p>Améliorez votre jeu avec nos coachs qualifiés. Des sessions individuelles ou en groupe sont disponibles pour tous les âges.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services-section section-padding bg-light">
+        <section id="tarifs" class="pricing section-padding">
             <div class="container">
-                <h3>Nos Services</h3>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <h4>Location Horaire</h4>
-                        <p>Réservez un terrain pour une heure ou plus, parfait pour un match rapide entre amis.</p>
+                <h2 class="section-title">Nos Tarifs</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Heure Pleine</h3>
+                        <p class="price">X <span>CFA/heure</span></p>
+                        <ul>
+                            <li>Accès au terrain synthétique</li>
+                            <li>Éclairage inclus</li>
+                            <li>Accès vestiaires</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Réserver</a>
                     </div>
-                    <div class="service-item">
-                        <h4>Tournois Organisés</h4>
-                        <p>Participez à nos tournois réguliers et mesurez-vous aux meilleures équipes.</p>
+                    <div class="pricing-card featured">
+                        <h3>Heure Creuse</h3>
+                        <p class="price">Y <span>CFA/heure</span></p>
+                        <ul>
+                            <li>Accès au terrain synthétique</li>
+                            <li>Éclairage inclus</li>
+                            <li>Accès vestiaires</li>
+                            <li>Tarif réduit</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Réserver Maintenant</a>
                     </div>
-                    <div class="service-item">
-                        <h4>Événements Privés</h4>
-                        <p>Célébrez vos anniversaires, événements d'entreprise ou autres rassemblements sportifs chez nous.</p>
+                    <div class="pricing-card">
+                        <h3>Forfait Mensuel</h3>
+                        <p class="price">Z <span>CFA/mois</span></p>
+                        <ul>
+                            <li>4h de jeu par mois</li>
+                            <li>Priorité de réservation</li>
+                            <li>Accès vestiaires</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Demander</a>
                     </div>
                 </div>
+                <p class="pricing-note">Contactez-nous pour des offres personnalisées et des forfaits de tournois.</p>
             </div>
         </section>
 
-        <section id="gallery" class="gallery-section section-padding">
+        <section id="contact" class="contact section-padding bg-light">
             <div class="container">
-                <h3>Notre Galerie</h3>
-                <div class="gallery-grid">
-                    <img src="https://via.placeholder.com/400x300/007bff/ffffff?text=Terrain+1" alt="Terrain de Foot 5" loading="lazy">
-                    <img src="https://via.placeholder.com/400x300/007bff/ffffff?text=Joueurs+en+action" alt="Joueurs en action" loading="lazy">
-                    <img src="https://via.placeholder.com/400x300/007bff/ffffff?text=Vue+aérienne" alt="Vue aérienne du terrain" loading="lazy">
-                    <img src="https://via.placeholder.com/400x300/007bff/ffffff?text=Vestiaires" alt="Vestiaires modernes" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section section-padding bg-light">
-            <div class="container">
-                <h3>Contactez-Nous</h3>
-                <p>N'hésitez pas à nous contacter pour toute question ou réservation.</p>
+                <h2 class="section-title">Contactez-nous</h2>
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h4>Informations</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Adresse: Rue de l'Indépendance, Dakar, Sénégal</p>
-                        <p><i class="fas fa-phone"></i> Téléphone: +221 77 123 45 67</p>
-                        <p><i class="fas fa-envelope"></i> Email: info@foot5senegal.com</p>
+                        <h3>Informations</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Adresse: [Votre Adresse], Dakar, Sénégal</p>
+                        <p><i class="fas fa-phone-alt"></i> Téléphone: [+221 XXX XX XX XX]</p>
+                        <p><i class="fas fa-envelope"></i> Email: [contact@foot5senegal.com]</p>
                         <div class="social-links">
                             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <h4>Envoyez-nous un message</h4>
-                        <form action="#" method="POST">
+                    <div class="contact-form-wrapper">
+                        <h3>Envoyez-nous un message</h3>
+                        <form class="contact-form">
                             <div class="form-group">
                                 <label for="name">Nom</label>
                                 <input type="text" id="name" name="name" required>
@@ -133,9 +149,16 @@
                         </form>
                     </div>
                 </div>
-                <div class="map-container">
-                    <!-- Intégrez ici une carte Google Maps avec l'emplacement réel de votre terrain -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.916174828694!2d-17.4727546!3d14.70719885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTRCsDQyJzI1LjkiTiAxN8KwMjgnMTkuOCJX!5e0!3m2!1sfr!2ssn!4v1678912345678!5m2!1sfr!2ssn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation du terrain de foot 5"></iframe>
+            </div>
+        </section>
+
+        <!-- Map Section (Optional but highly recommended for local businesses) -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Où nous trouver</h2>
+                <div class="map-embed">
+                    <!-- Replace with your actual Google Maps embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.607238290373!2d-17.4727787!3d14.7176214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQzJzA3LjMiTiAxN8KwMjgnMTkuMSJX!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -145,13 +168,13 @@
         <div class="container">
             <p>&copy; 2023 Foot 5 Sénégal. Tous droits réservés.</p>
             <ul class="footer-links">
-                <li><a href="#">Mentions Légales</a></li>
-                <li><a href="#">Politique de Confidentialité</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> <!-- Remplacez par votre kit Font Awesome réel -->
 </body>
 </html>
